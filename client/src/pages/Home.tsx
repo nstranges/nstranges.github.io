@@ -98,7 +98,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div className="relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/JackPicCropped.jpg"
+                src={`${import.meta.env.BASE_URL}JackPicCropped.jpg`}
                 alt="Portrait of Nicholas Stranges"
                 className="object-cover w-full h-full"
               />
@@ -167,8 +167,7 @@ export default function Home() {
       <section id="contact" className="py-24 md:py-32">
         <div className="container px-4 mx-auto">
           <SectionHeading 
-            title="Get In Touch" 
-            subtitle="Have a project in mind? Let's build something together."
+            title="Get In Touch"
           />
           <ContactForm />
         </div>
