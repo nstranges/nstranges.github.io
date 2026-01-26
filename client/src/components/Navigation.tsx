@@ -50,7 +50,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <Link href="/">
           <span className="font-display text-2xl font-bold cursor-pointer text-foreground tracking-tight hover:opacity-80 transition-opacity">
-            Portfolio.
+            Nicholas Stranges.
           </span>
         </Link>
 

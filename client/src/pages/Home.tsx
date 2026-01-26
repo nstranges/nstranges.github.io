@@ -109,7 +109,7 @@ export default function Home() {
                 I am a Master of Science in Applied Computing student at the University of Toronto, specializing in Artificial Intelligence. My work focuses on reasoning path optimization, episodic memory, and training AI agents.
               </p>
               <p>
-                With a background in Mechatronic Systems Engineering and Business from Western University, I blend technical expertise with a strategic mindset. I've had the opportunity to build software at Tesla, lead R&D teams, and perfom AI research.
+                With a background in Mechatronic Systems Engineering and Business from Western University, I blend technical expertise with a strategic mindset. I've had the opportunity to build software at Tesla, lead R&D teams, and perfomed AI research.
               </p>
               <div className="pt-6 space-y-4">
                 {PERSONAL_INFO.education.map((edu, i) => (
