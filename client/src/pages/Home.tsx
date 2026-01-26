@@ -43,7 +43,7 @@ export default function Home() {
               {PERSONAL_INFO.name}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Specializing in AI reasoning, robotics, and high-performance software systems.
+              Specializing in AI, robotics, reinforcement learning, and high-performance software systems.
             </p>
           </motion.div>
 
@@ -93,24 +93,22 @@ export default function Home() {
       <section id="about" className="py-24 md:py-32 bg-secondary/30">
         <div className="container px-4 mx-auto">
           <SectionHeading 
-            title="About Me" 
-            subtitle="I specialize in building performant web applications with modern technologies."
+            title="About Me"
           />
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div className="relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-              {/* Unsplash abstract tech image */}
-              {/* <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Coding setup" className="object-cover w-full h-full" /> */}
-               <div className="w-full h-full bg-muted flex items-center justify-center text-muted-foreground">
-                 {/* Placeholder for personal photo */}
-                 <span className="text-lg">Developer Photo</span>
-               </div>
+              <img
+                src="/JackPicCropped.jpg"
+                alt="Portrait of Nicholas Stranges"
+                className="object-cover w-full h-full"
+              />
             </div>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I am a Master of Science in Applied Computing student at the University of Toronto, specializing in Artificial Intelligence. My work focuses on reasoning path optimization and episodic memory for AI systems.
+                I am a Master of Science in Applied Computing student at the University of Toronto, specializing in Artificial Intelligence. My work focuses on reasoning path optimization, episodic memory, and training AI agents.
               </p>
               <p>
-                With a background in Mechatronic Systems Engineering and Business from Western University, I blend technical expertise with a strategic mindset. I've had the opportunity to build software at Tesla, lead R&D teams, and publish AI research.
+                With a background in Mechatronic Systems Engineering and Business from Western University, I blend technical expertise with a strategic mindset. I've had the opportunity to build software at Tesla, lead R&D teams, and perfom AI research.
               </p>
               <div className="pt-6 space-y-4">
                 {PERSONAL_INFO.education.map((edu, i) => (

@@ -21,18 +21,23 @@ export const PERSONAL_INFO = {
   email: "nicholastranges4@hotmail.com",
   phone: "519-317-6378",
   location: "Toronto, ON, Canada",
-  linkedin: "https://linkedin.com",
-  github: "https://github.com",
+  linkedin: "https://www.linkedin.com/in/nicholas-stranges/",
+  github: "https://github.com/nstranges",
   education: [
     {
       school: "University of Toronto",
       degree: "Master of Science in Applied Computing, AI Specialization",
-      details: "Vector Scholarship in AI Winner. Investigating reasoning path optimization and episodic memory."
+      details: "Vector Scholarship in AI Winner."
     },
     {
-      school: "Ivey Business School, Western University",
-      degree: "BESc Mechatronic Systems Engineering & BA Honours Business Administration",
-      details: "Dual degree. 4.0 GPA in Engineering."
+      school: "Ivey Business School",
+      degree: "HBA Honours Business Administration",
+      details: "Dual degree with engineering."
+    },
+    {
+      school: "Western University",
+      degree: "BESc Mechatronic Systems Engineering",
+      details: "4.0 GPA in Engineering."
     }
   ]
 };

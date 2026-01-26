@@ -71,7 +71,7 @@ export function ContactForm() {
                 <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea 
-                    placeholder="Tell me about your project..." 
+                    placeholder="Introduce yourself..." 
                     className="min-h-[150px] bg-background resize-none" 
                     {...field} 
                   />
