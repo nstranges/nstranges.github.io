@@ -13,6 +13,10 @@ const LINKS = [
 ];
 
 export function Navigation() {
+  const showSkills = false;
+  const visibleLinks = showSkills
+    ? LINKS
+    : LINKS.filter((link) => link.href !== "#skills");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [location] = useLocation();
@@ -52,7 +56,7 @@ export function Navigation() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {LINKS.map((link) => (
+          {visibleLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -86,7 +90,7 @@ export function Navigation() {
             className="md:hidden bg-background border-b border-border"
           >
             <nav className="flex flex-col p-4 space-y-4">
-              {LINKS.map((link) => (
+              {visibleLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}

@@ -11,8 +11,6 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
-  const detailsUrl = project.projectUrl || project.repoUrl;
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -66,23 +64,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </CardContent>
 
         <CardFooter className="p-6 pt-0 flex flex-col gap-2">
-          {detailsUrl ? (
-            <Button
-              asChild
-              variant="ghost"
-              className="w-full justify-between group/btn hover:bg-primary/5 hover:text-primary"
-            >
-              <a href={detailsUrl} target="_blank" rel="noopener noreferrer">
-                View Details
-                <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
-              </a>
-            </Button>
-          ) : (
-            <Button variant="ghost" className="w-full justify-between" disabled>
-              View Details
-              <ArrowRight className="w-4 h-4" />
-            </Button>
-          )}
           {project.pdfUrl && (
             <Button asChild variant="outline" className="w-full">
               <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer">
