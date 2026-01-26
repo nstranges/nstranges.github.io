@@ -190,7 +190,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-8 border-t border-border/50 bg-secondary/10">
         <div className="container px-4 mx-auto text-center text-muted-foreground text-sm">
-          <p>© {new Date().getFullYear()} Portfolio. Built with React & Tailwind CSS.</p>
+          <p>© {new Date().getFullYear()} Nicholas Stranges. Built with React & Tailwind CSS.</p>
         </div>
       </footer>
     </div>

@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     id: 1,
     title: "AI Research: Interpretable Ratings for LLMs",
     description: "Lead author of 'What Is Missing: Interpretable Ratings for Large Language Model Outputs'. Developed a rating system outperforming standard techniques by 3x.",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    imageUrl: `${import.meta.env.BASE_URL}WIMFigure.jpg`,
     repoUrl: "https://github.com/nstranges/expert-chat",
     pdfUrl: `${import.meta.env.BASE_URL}What_Is_Missing.pdf`,
     tags: ["LLM", "Reinforcement Learning", "PyTorch", "HuggingFace"],
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
     id: 2,
     title: "AI Research: Reasoning paths for LLMs",
     description: "Designed a reasoning-tree approach that turns LLM token entropy into explicit decision graphs. The approach enables better reasoning analysis and more efficient reinforcement learning. Future work will include inference time path selection to improve reasoning.",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    imageUrl: `${import.meta.env.BASE_URL}ReasoningGraph.jpg`,
     pdfUrl: `${import.meta.env.BASE_URL}Building_Reasoning_Trees.pdf`,
     tags: ["LLM", "Reasoning", "PyTorch", "HuggingFace"],
     featured: true
@@ -67,16 +67,16 @@ export const PROJECTS: Project[] = [
     id: 3,
     title: "AI Research: Agent Episodic Memory",
     description: "Built a multimodal episodic memory system for embodied LLM agents. The system retrieves and reuses past experiences via vector databases, significantly improving decision-making performance in Minecraft tasks.",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    imageUrl: `${import.meta.env.BASE_URL}EncoderExample.jpg`,
     pdfUrl: `${import.meta.env.BASE_URL}Agent_Episodic_Memory.pdf`,
-    tags: ["LLM", "Agents", "Vector Databases", "HuggingFace"],
+    tags: ["LLM", "Agents", "Vector Databases", "Embodied AI"],
     featured: true
   },
   {
     id: 4,
     title: "Ecolux",
     description: "Co-founded an energy monitoring business. Developed prototypes using React, Flask, and Google Cloud, attracting investor interest.",
-    imageUrl: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+    imageUrl: `${import.meta.env.BASE_URL}PowerLines.jpg`,
     tags: ["React", "Flask", "Google Cloud", "MongoDB"],
     featured: false
   },
@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
     id: 5,
     title: "Tesla: Controls Software Automation",
     description: "Independently created and deployed a full-stack automatic code generation application in Python, replacing a two-day manual task for engineers.",
-    imageUrl: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80",
+    imageUrl: `${import.meta.env.BASE_URL}Buildings.jpg`,
     tags: ["Python", "Automation", "Full-Stack", "Controls"],
     featured: false
   },
@@ -92,7 +92,7 @@ export const PROJECTS: Project[] = [
     id: 6,
     title: "Continual Energy: R&D Software",
     description: "Implemented an API-accessible data pipeline for real-time training of an LSTM classification network in PyTorch, achieving 98% accuracy.",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    imageUrl: `${import.meta.env.BASE_URL}Computer.jpg`,
     tags: ["PyTorch", "LSTM", "Docker", "PostgreSQL"],
     featured: false
   },
