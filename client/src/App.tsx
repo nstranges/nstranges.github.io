@@ -1,10 +1,10 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
-function Router() {
+function AppRouter() {
   return (
     <Switch>
       <Route path="/" component={Home}/>
@@ -17,7 +17,9 @@ function App() {
   return (
     <TooltipProvider>
       <Toaster />
-      <Router />
+      <Router base="/personal-website">
+        <AppRouter />
+      </Router>
     </TooltipProvider>
   );
 }
