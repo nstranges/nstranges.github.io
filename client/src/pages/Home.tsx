@@ -11,6 +11,7 @@ import { PROJECTS, SKILLS, PERSONAL_INFO } from "@/lib/constants";
 export default function Home() {
   const projects = PROJECTS;
   const skills = SKILLS;
+  const showSkills = false;
 
   // Group skills by category
   const skillsByCategory = skills.reduce((acc, skill) => {
@@ -124,28 +125,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS SECTION */}
-      <section id="skills" className="py-24 md:py-32">
-        <div className="container px-4 mx-auto max-w-6xl">
-          <SectionHeading 
-            title="Technical Skills" 
-            subtitle="The tools and technologies I use to bring ideas to life."
-          />
-          
-          <div className="space-y-12">
-            {skillsByCategory && Object.entries(skillsByCategory).map(([category, categorySkills], catIndex) => (
-              <div key={category}>
-                <h3 className="text-xl font-bold mb-6 text-foreground/80">{category}</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                  {categorySkills.map((skill, index) => (
-                    <SkillBadge key={skill.id} skill={skill} index={catIndex * 5 + index} />
-                  ))}
-                </div>
+      {showSkills && (
+        <>
+          {/* SKILLS SECTION */}
+          <section id="skills" className="py-24 md:py-32">
+            <div className="container px-4 mx-auto max-w-6xl">
+              <SectionHeading
+                title="Technical Skills"
+                subtitle="The tools and technologies I use to bring ideas to life."
+              />
+
+              <div className="space-y-12">
+                {skillsByCategory &&
+                  Object.entries(skillsByCategory).map(
+                    ([category, categorySkills], catIndex) => (
+                      <div key={category}>
+                        <h3 className="text-xl font-bold mb-6 text-foreground/80">
+                          {category}
+                        </h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                          {categorySkills.map((skill, index) => (
+                            <SkillBadge
+                              key={skill.id}
+                              skill={skill}
+                              index={catIndex * 5 + index}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ),
+                  )}
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* PROJECTS SECTION */}
       <section id="projects" className="py-24 md:py-32 bg-secondary/30">

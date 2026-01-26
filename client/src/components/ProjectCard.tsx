@@ -11,6 +11,8 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
+  const detailsUrl = project.projectUrl || project.repoUrl;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -49,7 +51,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <h3 className="text-2xl font-bold font-display group-hover:text-primary transition-colors">
               {project.title}
             </h3>
-            <p className="text-muted-foreground leading-relaxed line-clamp-3">
+            <p className="text-muted-foreground leading-relaxed">
               {project.description}
             </p>
           </div>
@@ -63,11 +65,31 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
         </CardContent>
 
-        <CardFooter className="p-6 pt-0">
-          <Button variant="ghost" className="w-full justify-between group/btn hover:bg-primary/5 hover:text-primary">
-            View Details
-            <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
-          </Button>
+        <CardFooter className="p-6 pt-0 flex flex-col gap-2">
+          {detailsUrl ? (
+            <Button
+              asChild
+              variant="ghost"
+              className="w-full justify-between group/btn hover:bg-primary/5 hover:text-primary"
+            >
+              <a href={detailsUrl} target="_blank" rel="noopener noreferrer">
+                View Details
+                <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
+              </a>
+            </Button>
+          ) : (
+            <Button variant="ghost" className="w-full justify-between" disabled>
+              View Details
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          )}
+          {project.pdfUrl && (
+            <Button asChild variant="outline" className="w-full">
+              <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer">
+                View PDF
+              </a>
+            </Button>
+          )}
         </CardFooter>
       </Card>
     </motion.div>
