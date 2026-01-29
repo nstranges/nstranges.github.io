@@ -14,10 +14,12 @@ function AppRouter() {
 }
 
 function App() {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
   return (
     <TooltipProvider>
       <Toaster />
-      <Router base="/personal-website">
+      <Router base={base}>
         <AppRouter />
       </Router>
     </TooltipProvider>
