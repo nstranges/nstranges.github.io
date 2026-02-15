@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     title: "AI Research: Interpretable Ratings for LLMs",
     description: "Lead author of 'What Is Missing: Interpretable Ratings for Large Language Model Outputs'. Developed a rating system outperforming standard techniques by 3x.",
     imageUrl: `${import.meta.env.BASE_URL}WIMFigure.jpg`,
-    repoUrl: "https://github.com/nstranges/expert-chat",
+    repoUrl: "https://github.com/nstranges/what-is-missing/tree/main",
     pdfUrl: `${import.meta.env.BASE_URL}What_Is_Missing.pdf`,
     tags: ["LLM", "Reinforcement Learning", "PyTorch", "HuggingFace"],
     featured: true
