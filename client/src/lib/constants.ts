@@ -96,6 +96,16 @@ export const PROJECTS: Project[] = [
     tags: ["PyTorch", "LSTM", "Docker", "PostgreSQL"],
     featured: false
   },
+  {
+    id: 7,
+    title: "AI Research: P3O",
+    description: "An RL training algorithm that removes the clipping hyperparameter while retaining the same performance as GRPO.",
+    imageUrl: `${import.meta.env.BASE_URL}feynrl.png`,
+    repoUrl: "https://github.com/FeynRL-project/FeynRL",
+    pdfUrl: "https://arxiv.org/pdf/2605.12380",
+    tags: ["LLM", "Reinforcement Learning", "Large Model Training", "FeynRL"],
+    featured: true
+  },
   
 ];
 
