@@ -46,6 +46,16 @@ export const PERSONAL_INFO = {
 export const PROJECTS: Project[] = [
   {
     id: 1,
+    title: "AI Research: P3O",
+    description: "An RL training algorithm that removes the clipping hyperparameter while retaining the same performance as GRPO.",
+    imageUrl: `${import.meta.env.BASE_URL}feynrl.png`,
+    repoUrl: "https://github.com/FeynRL-project/FeynRL",
+    pdfUrl: "https://arxiv.org/pdf/2605.12380",
+    tags: ["LLM", "Reinforcement Learning", "Large Model Training", "FeynRL"],
+    featured: true
+  },
+  {
+    id: 2,
     title: "AI Research: Interpretable Ratings for LLMs",
     description: "Lead author of 'What Is Missing: Interpretable Ratings for Large Language Model Outputs'. Developed a rating system outperforming standard techniques by 3x.",
     imageUrl: `${import.meta.env.BASE_URL}WIMFigure.jpg`,
@@ -55,7 +65,7 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    id: 2,
+    id: 3,
     title: "AI Research: Reasoning paths for LLMs",
     description: "Designed a reasoning-tree approach that turns LLM token entropy into explicit decision graphs. The approach enables better reasoning analysis and more efficient reinforcement learning. Future work will include inference time path selection to improve reasoning.",
     imageUrl: `${import.meta.env.BASE_URL}ReasoningGraph.jpg`,
@@ -64,7 +74,7 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    id: 3,
+    id: 4,
     title: "AI Research: Agent Episodic Memory",
     description: "Built a multimodal episodic memory system for embodied LLM agents. The system retrieves and reuses past experiences via vector databases, significantly improving decision-making performance in Minecraft tasks.",
     imageUrl: `${import.meta.env.BASE_URL}EncoderExample.jpg`,
@@ -73,7 +83,7 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    id: 4,
+    id: 5,
     title: "Ecolux",
     description: "Co-founded an energy monitoring business. Developed prototypes using React, Flask, and Google Cloud, attracting investor interest.",
     imageUrl: `${import.meta.env.BASE_URL}PowerLines.jpg`,
@@ -81,7 +91,7 @@ export const PROJECTS: Project[] = [
     featured: false
   },
   {
-    id: 5,
+    id: 6,
     title: "Tesla: Controls Software Automation",
     description: "Independently created and deployed a full-stack automatic code generation application in Python, replacing a two-day manual task for engineers.",
     imageUrl: `${import.meta.env.BASE_URL}Buildings.jpg`,
@@ -89,22 +99,12 @@ export const PROJECTS: Project[] = [
     featured: false
   },
   {
-    id: 6,
+    id: 7,
     title: "Continual Energy: R&D Software",
     description: "Implemented an API-accessible data pipeline for real-time training of an LSTM classification network in PyTorch, achieving 98% accuracy.",
     imageUrl: `${import.meta.env.BASE_URL}Computer.jpg`,
     tags: ["PyTorch", "LSTM", "Docker", "PostgreSQL"],
     featured: false
-  },
-  {
-    id: 7,
-    title: "AI Research: P3O",
-    description: "An RL training algorithm that removes the clipping hyperparameter while retaining the same performance as GRPO.",
-    imageUrl: `${import.meta.env.BASE_URL}feynrl.png`,
-    repoUrl: "https://github.com/FeynRL-project/FeynRL",
-    pdfUrl: "https://arxiv.org/pdf/2605.12380",
-    tags: ["LLM", "Reinforcement Learning", "Large Model Training", "FeynRL"],
-    featured: true
   },
   
 ];
